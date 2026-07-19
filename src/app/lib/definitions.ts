@@ -496,3 +496,20 @@ export const CreateContactFormResponseFormSchema = z.object({
 export type CreateContactFormResponseSchema = z.infer<
   typeof CreateContactFormResponseFormSchema
 >;
+
+export const EditDocumentFormSchema = z.object({
+  originalName: z
+    .string({ message: "Please enter valid name" })
+    .min(3, { message: "Be at least 3 charactes long" })
+    .trim(),
+  publishStatus: z
+    .nativeEnum(PublishStatusEnum, { message: "Publish status required" })
+    .default(PublishStatusEnum.DRAFT),
+  publishDate: z.preprocess(
+    (value) => new Date(value as string),
+    z.date({
+      message: "Invalid publish date format",
+    })
+  ),
+});
+export type EditDocumentSchema = z.infer<typeof EditDocumentFormSchema>;

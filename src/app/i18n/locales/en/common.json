@@ -1,4 +1,8 @@
 {
+  "Only": "Only",
+  "only": "only",
+  "Documents": "Documents",
+  "Document": "Document",
   "PublishDateTime": "Publish Date",
   "PublishStatus": "Publish Status",
   "SelectTag": "Select Tag",
@@ -201,6 +205,7 @@
   "Coming Soon": "Coming Soon",
   "Pinned": "Pinned",
 
+  "DragYourFileHere": "Drag your file here, or",
   "DragYourImageHere": "Drag your image here, or",
   "ChooseTheStatus": "Choose the status",
   "No": "No",

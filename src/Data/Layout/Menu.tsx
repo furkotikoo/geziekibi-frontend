@@ -45,7 +45,7 @@ export const MenuList: MenuItem[] | undefined = [
       },
       {
         title: "Blog",
-        id: 6,
+        id: 3,
         icon: "to-do",
         type: "sub",
         active: false,
@@ -65,7 +65,7 @@ export const MenuList: MenuItem[] | undefined = [
       },
       {
         title: "Catalog",
-        id: 6,
+        id: 4,
         icon: "to-do",
         type: "sub",
         active: false,
@@ -73,6 +73,20 @@ export const MenuList: MenuItem[] | undefined = [
           {
             path: "/catalogs",
             title: "Catalogs",
+            type: "link",
+          },
+        ],
+      },
+      {
+        title: "Document",
+        id: 5,
+        icon: "to-do",
+        type: "sub",
+        active: false,
+        children: [
+          {
+            path: "/documents",
+            title: "Documents",
             type: "link",
           },
         ],
@@ -168,7 +182,7 @@ export const MenuList: MenuItem[] | undefined = [
     title: "İletişim",
     Items: [
       {
-        id: 33,
+        id: 34,
         path: "/faqs",
         icon: "support-tickets",
         type: "link",
@@ -177,7 +191,7 @@ export const MenuList: MenuItem[] | undefined = [
       },
 
       {
-        id: 33,
+        id: 35,
         path: "/contact-forms",
         icon: "support-tickets",
         type: "link",

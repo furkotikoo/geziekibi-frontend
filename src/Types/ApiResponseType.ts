@@ -105,6 +105,18 @@ export type Catalog = {
   publishDate: Date;
   publishStatus: PublishStatusEnum;
 };
+export type Document = {
+  id: number;
+  originalName: string;
+  publicId: string;
+  url: string;
+  secureUrl: string;
+  format: string;
+  createdAt: Date;
+  order: number;
+  publishDate: Date;
+  publishStatus: PublishStatusEnum;
+};
 export type TourService = {
   id: number;
   type: TourServiceTypeEnum;

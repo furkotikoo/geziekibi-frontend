@@ -1,4 +1,8 @@
 {
+  "Only":"Sadece",
+  "only":"sadece",
+  "Documents": "Belgeler",
+  "Document": "Belge",
   "SearchByName": "İsim ile arat",
   "Remove": "Kaldır",
   "CreateNewPathHeading": "Yeni Güzergah Oluştur",
@@ -288,7 +292,7 @@
   "Login With Bg Image": "Arka Plan Görselli Giriş",
   "Coming Soon": "Çok Yakında",
   "Pinned": "Sabit",
-
+  "DragYourFileHere": "Dosyanızı buraya sürükleyin veya",
   "DragYourImageHere": "Resminizi buraya sürükleyin veya",
   "ChooseTheStatus": "Durumu seçin",
   "No": "Hayır",

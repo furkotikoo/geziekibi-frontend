@@ -89,7 +89,7 @@ export const UserForm = () => {
         showConfirmButton: false,
         didOpen: (popup) => {
           // window.location.reload();
-          window.location.href = "/tour/add-tour"
+          window.location.href = "/tours"
         },
       });
       dispatch(clearState());

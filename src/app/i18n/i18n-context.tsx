@@ -14,6 +14,7 @@ interface InitOptions {
   defaultNS: string;
   ns: string;
   detection: {
+    order: string[];
     caches: string[];
   };
 }
@@ -34,6 +35,7 @@ i18next
   .init({
     ...getOptions(), 
     detection: {
+      order: ["cookie"],
       caches: ["cookie"],
     },
   } as InitOptions); 

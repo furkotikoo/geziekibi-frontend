@@ -77,7 +77,7 @@ export const CreateServiceFormSchema = z.object({
     .string({ message: "Please enter valid service name" })
     .min(3, { message: "Be at least 3 charactes long" })
     .trim(),
-  description: z.string().optional(),
+  description: z.string().nullable().optional(),
 });
 export type CreateServiceSchema = z.infer<typeof CreateServiceFormSchema>;
 
@@ -282,7 +282,10 @@ export const TourValidationFormSchema = z.object({
   ),
   dailyForms: z.array(DailyFormFormSchema), // Allow an array of any file objects for primary images
   tourDates: z.array(TourDateFormSchema), // Allow an array of any file objects for primary images
-  importantNotes: z.string().optional(), // 'text' type is generally optional in validation
+  importantNotes: z
+    .string()
+    .nullish()
+    .transform((value) => value ?? ""),
 });
 export type TourValidationSchema = z.infer<typeof TourValidationFormSchema>;
 
@@ -301,7 +304,7 @@ export const CreateTourPriceFormSchema = z.object({
   currency: z
     .nativeEnum(CurrencyEnum, { message: "Currency required" })
     .default(CurrencyEnum.TRY),
-  description: z.string().optional(),
+  description: z.string().nullable().optional(),
 });
 export type CreateTourPriceSchema = z.infer<typeof CreateTourPriceFormSchema>;
 
